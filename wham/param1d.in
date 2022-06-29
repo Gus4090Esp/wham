@@ -1,0 +1,9 @@
+num_windows      120
+centers_fname    centers.txt
+colvar_dir       colvar_files
+colvar_fname     COLVAR%03d_ps16000_20000
+kbias1           25000
+bin_width1       0.01
+start_value1     0.285
+end_value1       2.105
+kbt              2.6606

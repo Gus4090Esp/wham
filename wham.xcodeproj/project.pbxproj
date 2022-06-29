@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC52AA6F286C12C300D78F7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC52AA6E286C12C300D78F7D /* main.cpp */; };
+		EC52AA78286C170A00D78F7D /* histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC52AA77286C170A00D78F7D /* histogram.cpp */; };
+		EC52AA7A286C17BC00D78F7D /* histogram2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC52AA79286C17BC00D78F7D /* histogram2d.cpp */; };
+		EC52AA7C286C195B00D78F7D /* wham_colvar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC52AA7B286C195B00D78F7D /* wham_colvar.cpp */; };
+		EC52AA7F286C199400D78F7D /* wham2d_colvar_vark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC52AA7D286C199400D78F7D /* wham2d_colvar_vark.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,12 @@
 
 /* Begin PBXFileReference section */
 		EC52AA6B286C12C300D78F7D /* wham */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wham; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC52AA6E286C12C300D78F7D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EC52AA75286C132300D78F7D /* histogram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		EC52AA76286C14B300D78F7D /* histogram2d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = histogram2d.h; sourceTree = "<group>"; };
+		EC52AA77286C170A00D78F7D /* histogram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = histogram.cpp; sourceTree = "<group>"; };
+		EC52AA79286C17BC00D78F7D /* histogram2d.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = histogram2d.cpp; sourceTree = "<group>"; };
+		EC52AA7B286C195B00D78F7D /* wham_colvar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wham_colvar.cpp; sourceTree = "<group>"; };
+		EC52AA7D286C199400D78F7D /* wham2d_colvar_vark.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wham2d_colvar_vark.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,12 @@
 		EC52AA6D286C12C300D78F7D /* wham */ = {
 			isa = PBXGroup;
 			children = (
-				EC52AA6E286C12C300D78F7D /* main.cpp */,
+				EC52AA75286C132300D78F7D /* histogram.h */,
+				EC52AA76286C14B300D78F7D /* histogram2d.h */,
+				EC52AA77286C170A00D78F7D /* histogram.cpp */,
+				EC52AA7B286C195B00D78F7D /* wham_colvar.cpp */,
+				EC52AA7D286C199400D78F7D /* wham2d_colvar_vark.cpp */,
+				EC52AA79286C17BC00D78F7D /* histogram2d.cpp */,
 			);
 			path = wham;
 			sourceTree = "<group>";
@@ -119,7 +132,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC52AA6F286C12C300D78F7D /* main.cpp in Sources */,
+				EC52AA7A286C17BC00D78F7D /* histogram2d.cpp in Sources */,
+				EC52AA78286C170A00D78F7D /* histogram.cpp in Sources */,
+				EC52AA7C286C195B00D78F7D /* wham_colvar.cpp in Sources */,
+				EC52AA7F286C199400D78F7D /* wham2d_colvar_vark.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

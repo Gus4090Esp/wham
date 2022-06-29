@@ -1,0 +1,12 @@
+num_windows      202
+centers_fname    centers.txt
+colvar_dir       colvar_files
+colvar_fname     COLVAR%03d_ps4000_24000
+bin_width1       0.01
+start_value1     0.32
+end_value1       1.95
+bin_width2       10.0
+start_value2     0.0
+end_value2       2500.0
+kbt              2.6606
+

@@ -1,0 +1,38 @@
+1. Instructions to compile code:
+   WHAM for 1D free energy profiles: make wham_colvar
+   WHAM for 2D free energy profiles: make wham2d_colvar_vark
+
+2. Instructions to run code:
+   First, you must parse your input COLVAR files to remove comment lines
+   and any duplicate lines (that occur when restarting a crashed simulation).
+   Use US_parse_colvar.py to output files for desired time frames for 1D WHAM.
+   Use US_parse_colvar2d.py for 2D WHAM.
+
+   Run 1D WHAM: ./wham_colvar param.in
+   Run 2D WHAM: ./wham2d_colvar_vark param.in
+
+   Example parameter files (param1d.in and param2d.in) are included.
+   Descriptions of these parameters are given below.
+
+3. Input parameters:
+   Example input parameter files are included as param1d.in and param2d.in
+   Parameter      Value
+   -------------------------------------------
+   num_windows    <int> number of windows
+   centers_fname  <string> name of files with window centers
+                  1D wham: 1 col per row for each window
+                  2D wham: each row lists centers of 1st CV and 2nd CV
+                  followed by spring constant in bias on 1st CV in kJ/mol
+                  and spring constant in bias on 2nd CV in kJ/mol
+   colvar_dir     <string> directory with parsed colvar files
+   colvar_fname   <string> general name of all colvar files to be used
+                  includes one text formating specification for window number
+   bin_width1     <float> width of bins in histogram along 1st axis
+   bin_width2     <float> width of bins in histogram along 2nd axis (2D wham)
+   start_value1   <float> minimum value of histogram along 1st axis
+   start_value2   <float> minimum value of histogram along 2nd axis (2D wham)
+   end_value1     <float> maximum value of histogram along 1st axis
+   end_value2     <float> maximum value of histogram along 2nd axis (2D wham)
+   kbias1         <float> value of spring constant for bias on 1st CV in kJ/mol
+   kbt            <float> value of kT in kJ/mol used in simulation
+
